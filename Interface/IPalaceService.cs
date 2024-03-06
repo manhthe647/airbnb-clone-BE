@@ -1,6 +1,7 @@
 ﻿namespace airbnb_clone_BE.Interface
 {
-    public class IRoomService
+    public interface IPalaceService
     {
+
     }
 }

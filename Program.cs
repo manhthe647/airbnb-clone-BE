@@ -1,6 +1,15 @@
+using airbnb_clone_BE.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+// connect sql sv
+var connectString = builder.Configuration.GetConnectionString("AirBnbDb") ?? throw new Exception("ConnectionString is empty or null.");
+builder.Services.AddDbContext<DataContext>(option =>  option.UseSqlServer(connectString));
+
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
