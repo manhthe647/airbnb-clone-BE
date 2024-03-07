@@ -5,8 +5,7 @@ namespace airbnb_clone_BE.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PalacesController : ControllerBase
+    public class PlacesAmentitiesController : ControllerBase
     {
-
     }
 }

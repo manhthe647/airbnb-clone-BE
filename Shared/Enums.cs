@@ -1,12 +1,11 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace airbnb_clone_BE.Controllers
+namespace airbnb_clone_BE.Shared
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PalacesController : ControllerBase
+    public class Enums : ControllerBase
     {
-
     }
 }

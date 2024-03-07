@@ -1,4 +1,6 @@
 using airbnb_clone_BE.Data;
+using airbnb_clone_BE.Interface;
+using airbnb_clone_BE.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +11,8 @@ var builder = WebApplication.CreateBuilder(args);
 var connectString = builder.Configuration.GetConnectionString("AirBnbDb") ?? throw new Exception("ConnectionString is empty or null.");
 builder.Services.AddDbContext<DataContext>(option =>  option.UseSqlServer(connectString));
 
+//di
+builder.Services.AddTransient<IAmenityService, AmenityServices>();
 
 
 builder.Services.AddControllers();

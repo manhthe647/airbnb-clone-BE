@@ -1,4 +1,4 @@
-﻿namespace airbnb_clone_BE.Entities
+﻿namespace airbnb_clone_BE.Data.Entity
 {
     public class Message
     {

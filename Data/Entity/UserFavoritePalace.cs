@@ -1,4 +1,4 @@
-﻿namespace airbnb_clone_BE.Entity
+﻿namespace airbnb_clone_BE.Data.Entity
 {
     public class UserFavoritePalace
     {
