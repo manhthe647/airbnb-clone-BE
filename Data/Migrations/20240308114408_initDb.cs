@@ -14,7 +14,7 @@ namespace airbnb_clone_BE.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    AmentityName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AmenityName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Icon = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
@@ -55,17 +55,17 @@ namespace airbnb_clone_BE.Migrations
 
             migrationBuilder.InsertData(
                 table: "Amenities",
-                columns: new[] { "Id", "AmentityName", "Icon" },
+                columns: new[] { "Id", "AmenityName", "Icon" },
                 values: new object[,]
                 {
-                    { 1, "Wifi", "iconoir:wifi" },
-                    { 2, "TV", "gala:tv" },
-                    { 3, "Bếp", "mdi:stove" },
-                    { 4, "Máy giặt", "icon-park-outline:washing-machine" },
-                    { 5, "Chỗ đỗ xe miễn phí tại nơi ở", "fluent:vehicle-car-16-regular" },
-                    { 6, "Chỗ đỗ xe có thu phí trong khuôn viên", "fluent:vehicle-car-parking-32-regular" },
-                    { 7, "Điều hòa nhiệt độ", "material-symbols:mode-cool" },
-                    { 8, "Không gian làm việc riêng", "lucide:lamp-desk" }
+                    { 1, "Wifi", "430077_fi_wi_wifi_icon.png" },
+                    { 2, "TV", "172609_tv_icon.png" },
+                    { 3, "Bếp", "976611_appliances_cook_cooker_kitchen_oven_icon.png" },
+                    { 4, "Máy giặt", "9132480_washing machine_laundry_cleaning_housekeeping_washing_icon.png" },
+                    { 5, "Chỗ đỗ xe miễn phí tại nơi ở", "753908_cars_automobile_car_vehicle_icon.png" },
+                    { 6, "Chỗ đỗ xe có thu phí trong khuôn viên", "751082_parking_car_packing_sign_vehicle_icon.png" },
+                    { 7, "Điều hòa nhiệt độ", "9035523_snow_outline_icon.png" },
+                    { 8, "Không gian làm việc riêng", "1250326_desk_lamp_light_table_icon.png" }
                 });
         }
 

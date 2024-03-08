@@ -11,6 +11,17 @@ var builder = WebApplication.CreateBuilder(args);
 var connectString = builder.Configuration.GetConnectionString("AirBnbDb") ?? throw new Exception("ConnectionString is empty or null.");
 builder.Services.AddDbContext<DataContext>(option =>  option.UseSqlServer(connectString));
 
+//Add Cors
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("MyPolicy", builder =>
+    {
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
+
 //di
 builder.Services.AddTransient<IAmenityService, AmenityServices>();
 
@@ -29,10 +40,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors("MyPolicy");
 app.UseHttpsRedirection();
+app.UseStaticFiles();
 
 app.UseAuthorization();
 
 app.MapControllers();
+app.UseDirectoryBrowser();
 
 app.Run();

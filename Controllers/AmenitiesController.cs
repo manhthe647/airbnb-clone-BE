@@ -15,7 +15,7 @@ namespace airbnb_clone_BE.Controllers
             _amenityService = amenityService;
         }
 
-        [HttpGet]
+        [HttpGet("getList")]
         public async Task<IActionResult> Get()
         { 
             var rs= await _amenityService.GetAmenity();

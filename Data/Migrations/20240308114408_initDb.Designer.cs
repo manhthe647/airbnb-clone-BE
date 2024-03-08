@@ -11,7 +11,7 @@ using airbnb_clone_BE.Data;
 namespace airbnb_clone_BE.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240307085449_initDb")]
+    [Migration("20240308114408_initDb")]
     partial class initDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -31,7 +31,7 @@ namespace airbnb_clone_BE.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<string>("AmentityName")
+                    b.Property<string>("AmenityName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -46,50 +46,50 @@ namespace airbnb_clone_BE.Migrations
                         new
                         {
                             Id = 1,
-                            AmentityName = "Wifi",
-                            Icon = "iconoir:wifi"
+                            AmenityName = "Wifi",
+                            Icon = "430077_fi_wi_wifi_icon.png"
                         },
                         new
                         {
                             Id = 2,
-                            AmentityName = "TV",
-                            Icon = "gala:tv"
+                            AmenityName = "TV",
+                            Icon = "172609_tv_icon.png"
                         },
                         new
                         {
                             Id = 3,
-                            AmentityName = "Bếp",
-                            Icon = "mdi:stove"
+                            AmenityName = "Bếp",
+                            Icon = "976611_appliances_cook_cooker_kitchen_oven_icon.png"
                         },
                         new
                         {
                             Id = 4,
-                            AmentityName = "Máy giặt",
-                            Icon = "icon-park-outline:washing-machine"
+                            AmenityName = "Máy giặt",
+                            Icon = "9132480_washing machine_laundry_cleaning_housekeeping_washing_icon.png"
                         },
                         new
                         {
                             Id = 5,
-                            AmentityName = "Chỗ đỗ xe miễn phí tại nơi ở",
-                            Icon = "fluent:vehicle-car-16-regular"
+                            AmenityName = "Chỗ đỗ xe miễn phí tại nơi ở",
+                            Icon = "753908_cars_automobile_car_vehicle_icon.png"
                         },
                         new
                         {
                             Id = 6,
-                            AmentityName = "Chỗ đỗ xe có thu phí trong khuôn viên",
-                            Icon = "fluent:vehicle-car-parking-32-regular"
+                            AmenityName = "Chỗ đỗ xe có thu phí trong khuôn viên",
+                            Icon = "751082_parking_car_packing_sign_vehicle_icon.png"
                         },
                         new
                         {
                             Id = 7,
-                            AmentityName = "Điều hòa nhiệt độ",
-                            Icon = "material-symbols:mode-cool"
+                            AmenityName = "Điều hòa nhiệt độ",
+                            Icon = "9035523_snow_outline_icon.png"
                         },
                         new
                         {
                             Id = 8,
-                            AmentityName = "Không gian làm việc riêng",
-                            Icon = "lucide:lamp-desk"
+                            AmenityName = "Không gian làm việc riêng",
+                            Icon = "1250326_desk_lamp_light_table_icon.png"
                         });
                 });
 

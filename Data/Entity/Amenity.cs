@@ -6,7 +6,7 @@ namespace airbnb_clone_BE.Data.Entity
     {
         [Key]
         public int Id { get; set; }
-        public string AmentityName { get; set; }
+        public string AmenityName { get; set; }
         public string? Icon { get; set;}
     }
 }
