@@ -24,8 +24,8 @@ namespace airbnb_clone_BE.Shared
         A = 0, // Yên bình
         B = 1, // Độc đáo
         C = 3, // Phù hợp cho gia đình
-        E = 4, // Vị trí trung tâm
-        F = 5, // Rộng rãi
+        D = 4, // Vị trí trung tâm
+        E = 5, // Rộng rãi
     }
 
 

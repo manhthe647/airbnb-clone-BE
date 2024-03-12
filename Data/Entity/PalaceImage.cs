@@ -1,6 +1,6 @@
 ﻿namespace airbnb_clone_BE.Data.Entity
 {
-    public class PalaceImages
+    public class PalaceImage
     {
         public int Id { get; set; }
         public int PalaceId { get; set; }

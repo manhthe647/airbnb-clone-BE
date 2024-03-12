@@ -24,6 +24,7 @@ builder.Services.AddCors(options =>
 
 //di
 builder.Services.AddTransient<IAmenityService, AmenityServices>();
+builder.Services.AddTransient<IPalaceService, PalaceServices>();
 
 
 builder.Services.AddControllers();

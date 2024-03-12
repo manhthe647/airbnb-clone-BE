@@ -4,8 +4,8 @@
     {
         public int Id { get; set; }
         public int PalaceId { get; set; }
-        public int PrivateClosedBathroom {  get; set; } //riêng và khép kín
-        public int PrivateBathroom { get; set; }
-        public int sharedBathroom { get; set; }
+        public int? PrivateClosedBathroom {  get; set; } //riêng và khép kín
+        public int? PrivateBathroom { get; set; }
+        public int? sharedBathroom { get; set; }
     }
 }
